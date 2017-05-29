@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<!--Home page style-->
+
+<header id="home" class="home">
+    <div class="overlay-fluid-block">
+        <div class="container text-center container-fluid">
+            <div class="row">
+                <div class="portfolio-wrapper text-center">
+                    <div class="table-row-equal">
+                        <div class="thumbnail panel-community-edition" onclick="location.href='#expositor';">
+                            <div><h4>SEJA UM PARCEIRO DA DYNVERTISE!</h4>
+                                <div class="separator"></div>
+                                <p></p>
+                                <h5>Ganhe dinheiro exibindo propaganda no seu tablet!</h5>
+                                <div align="center"> <img class="img-rounded" height=200 src="{% static 'images/tablet.jpg' %}"></div>
+                                <h5>Se você transporta passageiros, não fique fora dessa!</h5>
+                                <h5>Seu investimento se pagando em menos de um mês!</h5>
+                            </div>
+                        </div>
+                        <div class="thumbnail panel-community-edition" onclick="location.href='#cliente';">
+                            <h4>TORNE-SE UM CLIENTE!</h4>
+                            <div class="separator"></div>
+                            <p></p>
+                            <div align="center"> <img class="img-responsive img-rounded" src="{% static 'images/cliente.png' %}"></div>
+                        </div>
+                    </div>
+                </div>      
+            </div>      
+        </div>
+    </div>      
+</header>
+
+<section id="expositor" class="service2 sections lightbg">
+    <div class="container">
+        <div class="row">
+            <div class="main_service2">
+                <div class="head_title text-center">
+                    <h2>SEJA UM EXPOSITOR</h2>
+                </div>
+            </div>
+            <div class="service_content">
+                <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                        <div class="single_service_left">
+                            <img src="{% static 'images/flaticon2_old.png' %}" alt="">
+                        </div>
+                        <div class="single_service_right">
+                            <h2>Faça parte já!</h2>
+                            <p>Você terá uma renda extra apenas por disponibilizar um tablet para seu passageiro no encosto de seu assento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                        <div class="single_service_left">
+                            <img src="{% static 'images/flaticon2.png' %}" alt="">
+                        </div>
+                        <div class="single_service_right">
+                            <h2>Exponha enquanto dirige</h2>
+                            <p>Como nosso parceiro você tem a liberdade e flexibilidade de trabalhar enquanto dirige. Sem trabalho adicional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service_content">
+                <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                        <div class="single_service_left">
+                            <img src="{% static 'images/flaticon1.png' %}" alt="">
+                        </div>
+                        <div class="single_service_right">
+                            <h2>Ganhe dinheiro!</h2>
+                            <p>O app identifica que o carro está em movimento e te remunera por isso!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="single_service2">
+                        <div class="single_service_left">
+                            <img src="{% static 'images/monitor.png' %}" alt="">
+                        </div>
+                        <div class="single_service_right">
+                            <h2>Instale nosso app!</h2>
+                            <p>O aplicativo controla a mídia a ser exposta para seu passageiro. Você não precisa se preocupar com nada!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------->
+
+<section id="cliente" class="features sections">
+    <div class="container">
+        <div class="main_features_content2">
+            <div class="portfolio-wrapper text-center">
+                <div class="main_service2">
+                    <div class="head_title text-center">
+                        <h2>TORNE-SE UM CLIENTE!</h2>
+                    </div>
+                    <hr>
+                    <button id="button1" class="btn btn-default">COMO FUNCIONA</button>
+                    <br>
+                    <br>
+                    <section id="como_funciona" style="display:none">       
+                        <ul>
+                            <li><h5>1. Você se cadastra</h5></li>
+                            <li><h5>2. Escolhe uma campanha de marketing (faça um orçamento em <a href="#price">Nossos Planos</a>)</h5></li>
+                            <li><h5>3. Faz o upload de sua mídia digital</h5></li>
+                            <li><h5>4. Sua mídia é transmitida para nossa rede de expositores</h5></li>
+                            <li><h5>5. Nosso aplicativo monitora o tempo de exposição da mídia e sua localização através de GPS</h5></li>
+                            <li><h5>6. Enviamos um relatório consolidado ao término de sua campanha</h5></li>               
+                        </ul><br>
+                    </section>
+                    <div class="table-row-equal">
+                        <div class="thumbnail col-md-4 col-sm-6 col-xs-12 community-edition">
+                            <i class="fa fa-book"></i>
+                            <div class="separator"></div>
+                            <h4>PERFIL DO PÚBLICO</h4>
+                            <h5>Passageiros de serviços como táxi ou Uber, com informação georreferenciada! Agora você pode focar nas pessoas que passam perto do seu estabelecimento!</h5>
+                        </div>
+                        <div class="thumbnail col-md-4 col-sm-6 col-xs-12 community-edition">
+                            <i class="fa fa-bug"></i>
+                            <div class="separator"></div>
+                            <h4>ALCANCE</h4>
+                            <h5>Com grande potencial de expansão, sua marca poderá chegar onde um táxi ou uber chega! </h5>
+                        </div>
+                        <div class="thumbnail col-md-4 col-sm-6 col-xs-12 community-edition">
+                            <i class="fa fa-gears"></i>
+                            <div class="separator"></div>
+                            <h4>SEJA MAIS DINÂMICO</h4>
+                            <h5>Altere o conteúdo de sua propaganda com apenas alguns cliques. Isto agiliza enormemente a veiculação de sua campanha!</h5>
+                        </div>
+                        <div class="thumbnail col-md-4 col-sm-6 col-xs-12 community-edition">
+                            <i class="fa fa-external-link"></i>
+                            <div class="separator"></div>
+                            <h4>ALTO IMPACTO</h4>
+                            <h5>Agora sua voz pode chegar mais perto do seu cliente! Sua propaganda vai viajar junto com seu futuro consumidor!</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div></section>
+
+{% endblock %}
