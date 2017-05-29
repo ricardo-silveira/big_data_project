@@ -1,0 +1,32 @@
+* { margin: 0; padding: 0; }
+
+#div1
+{
+    float:              left;
+    margin-right:       2%;         
+    margin-bottom:      10px;
+    max-width:          300px;
+    width:              45%;
+    background-color:   #d3edff;
+    border-color:       #00b5ff;
+    padding-bottom:     8px;
+}
+
+#div2
+{
+    float:              left;
+    max-width:          300px;
+    width:              45%; 
+}
+
+.regularContainer
+{
+    float:                      left;
+    padding:                    1%;
+    background-color:           #ffffff;
+    border:                     1px solid #00b5ff;
+    width:                      784px;
+}
+
+
+
